@@ -1,0 +1,42 @@
+.gift {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 6.25rem;
+  height: 2rem;
+  background-color: #6ea6f5a9;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.body {
+  width: 5.625rem;
+  height: 4rem;
+  background-color: #6da2ebab;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.ribbonH {
+  position: absolute;
+  width: 5.625rem;
+  height: 1rem;
+  background-color: rgb(214, 214, 93);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.ribbonV {
+  position: absolute;
+  width: 1rem;
+  height: 6rem;
+  background-color: rgb(224, 224, 97);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+}
