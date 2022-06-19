@@ -17,7 +17,7 @@ export default function Home() {
         style={{ display: "flex", gap: "1rem", flexDirection: "row" }}
       >
         {/* <Gift /> */}
-        <Door />
+        <Door selected />
         <Door />
         <Door />
       </main>
