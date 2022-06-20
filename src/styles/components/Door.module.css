@@ -16,6 +16,7 @@
   border-left: 10px solid rgb(230, 42, 255);
   border-right: 10px solid rgb(230, 42, 255);
   border-top: 10px solid rgb(230, 42, 255);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .frame::before {
