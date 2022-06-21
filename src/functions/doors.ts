@@ -15,4 +15,12 @@ function updateDoors(doors: DoorModel[], updatedDoor: DoorModel): DoorModel[] {
   });
 }
 
-export { createDoors, updateDoors };
+function validateDoorsParams(doors: number, gift: number) {
+  if (gift > doors) return false;
+  if (gift < 1 || doors < 1) return false;
+  if (gift > 15 || doors > 15) return false;
+
+  return true;
+}
+
+export { createDoors, updateDoors, validateDoorsParams };
