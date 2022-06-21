@@ -1,0 +1,35 @@
+.game {
+  position: relative;
+  min-height: 100vh;
+  padding: 5rem 3rem;
+}
+
+.controls {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+}
+
+.comeback {
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.625rem 1rem;
+  cursor: pointer;
+}
+
+.comeback:hover {
+  opacity: 0.8;
+}
+
+.doors {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
