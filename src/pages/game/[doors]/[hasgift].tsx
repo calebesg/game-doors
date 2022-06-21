@@ -2,7 +2,11 @@ import { useEffect, useState } from "react";
 import Link from "../../../../node_modules/next/link";
 import { useRouter } from "../../../../node_modules/next/router";
 import Door from "../../../components/Door";
-import { createDoors, updateDoors } from "../../../functions/doors";
+import {
+  createDoors,
+  updateDoors,
+  validateDoorsParams,
+} from "../../../functions/doors";
 import styles from "../../../styles/pages/Game.module.css";
 
 export default function game() {
@@ -12,7 +16,8 @@ export default function game() {
   useEffect(() => {
     const { doors, hasgift } = router.query;
 
-    setDoors(createDoors(+doors, +hasgift));
+    if (validateDoorsParams(+doors, +hasgift))
+      setDoors(createDoors(+doors, +hasgift));
   }, [router?.query]);
 
   const renderDoors = function () {
